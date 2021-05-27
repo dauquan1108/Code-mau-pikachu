@@ -51,12 +51,14 @@ class Content extends Component {
 
   changeStatusItem = (arr, list, item, index, indexitem) => {
     const { checkButtonClick } = this.props;
+    // debugger;
+    console.log({ arr }, { list }, { item }, { index }, { indexitem });
     checkButtonClick(arr, list, item, index, indexitem);
   };
 
   render() {
     const { list } = this.props;
-    console.log({ list });
+    // console.log({ list });
     let { checkHandler, time, checkReset } = this.state;
     if (time < 0)
       return (
